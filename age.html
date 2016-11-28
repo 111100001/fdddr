@@ -1,0 +1,155 @@
+﻿<!DOCTYPE HTML>
+<html manifest="OfflineApp.appcache">
+<head>
+<meta charset="utf-8">
+<title>Project1</title>
+<meta name="generator" content="NSB/AppStudio 6.0.0.0rc1$jqdr" />
+<meta name='date' content='2016-11-28 17:26:37.338000' />
+<meta name='version' content='1.0.0' />
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
+<meta name='apple-mobile-web-app-capable' content='YES' />
+<meta name='mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+<meta name='apple-mobile-web-app-title' content='' />
+<meta name='copyright' content='Copyright 2016 ABC Company' />
+<meta http-equiv='Content-Security-Policy' content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src * blob:; img-src * data:;" />
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
+<link rel='apple-touch-icon' href='nsb/images/LauncherIcon57.png' />
+<link rel='shortcut icon' sizes='192x192' href='nsb/images/192.png' />
+<link href="nsb/nsbstyle.css" rel="stylesheet">
+<script src="nsb/jquery.js"></script>
+<link href="nsb/jquery.modal.css" rel="stylesheet">
+<script src="nsb/hfunc.js"></script>
+<script src="nsb/jquery.modal.min.js"></script>
+<link href="nsb/jquery.mobile.css" rel="stylesheet">
+<script src="nsb/jquery.mobile.js"></script>
+<script src="nsb/jqmFunctions.js"></script>
+
+<link href="chromeManifest.json" rel="manifest">
+
+<style type="text/css">
+#Form1 {background:inherit;}
+#lbltitle {position:absolute; left:0px; right:auto; top:1px; bottom:auto; height:30px; width:320px;}
+#lbltoday {position:absolute; left:197px; right:auto; top:92px; bottom:auto; height:auto; width:auto;}
+#Label3 {position:absolute; left:179px; right:auto; top:148px; bottom:auto; height:auto; width:112px;}
+#txtd_wrapper {position:absolute; left:8px; right:auto; top:88px; bottom:auto; height:auto; width:184px;}
+#txtd_wrapper {margin:0px; box-sizing:border-box; }
+#txtbirthday_wrapper {position:absolute; left:21px; right:auto; top:158px; bottom:auto; height:auto; width:135px;}
+#txtbirthday_wrapper {margin:0px; box-sizing:border-box; }
+#txtdays_wrapper {position:absolute; left:15px; right:auto; top:235px; bottom:auto; height:auto; width:120px;}
+#txtdays_wrapper {margin:0px; box-sizing:border-box; }
+#txtmonths_wrapper {position:absolute; left:13px; right:auto; top:275px; bottom:auto; height:auto; width:120px;}
+#txtmonths_wrapper {margin:0px; box-sizing:border-box; }
+#txtyears_wrapper {position:absolute; left:15px; right:auto; top:321px; bottom:auto; height:auto; width:120px;}
+#txtyears_wrapper {margin:0px; box-sizing:border-box; }
+#chkages {position:absolute; left:145px; right:auto; top:231px; bottom:auto; height:138px; width:168px;}
+#btncalc {position:absolute; left:54px; right:auto; top:398px; bottom:auto; height:auto; width:auto;}
+#btnclear {position:absolute; left:183px; right:auto; top:395px; bottom:auto; height:auto; width:auto;}
+</style>
+
+</head>
+<body style="margin:0px;-ms-touch-action:none;font-family:-apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue';">
+<div data-role="page" id="NSBPage" data-theme="a" style="position:absolute; width:100%; background-color:inherit; ">
+<a name='/Form1' data-role=none></a>
+<div id="Form1" class="nsb-form" style="position:absolute; display:none; height:460px; top:0px; left:0px; width:320px; ">
+<script>
+Form1.innerHTML=[
+  "<div id='lbltitle' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:16px; font-weight:bold; background-color:green; border-color:red; ' >\u062A\u0637\u0628\u064A\u0642 \u062D\u0633\u0627\u0628 \u0627\u0644\u0639\u0645\u0631</div>",
+  "<div id='lbltoday' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:16px; font-weight:bold; ' >\u062A\u0627\u0631\u064A\u062E \u0627\u0644\u064A\u0648\u0645 \u0647\u0648</div>",
+  "<div id='Label3' class='' data-nsb-type=Label style='cursor:default;text-align:center; text-shadow:none; font-size:16px; font-weight:bold; ' >\u0627\u062F\u062E\u0644 \u062A\u0627\u0631\u064A\u062E \u0645\u064A\u0644\u0627\u062F\u0643</div>",
+  "<input id='txtd' type='date' name='' autocorrect='on' autocomplete='on' autocapitalize='on' step=any value='' placeholder='hhh' data-nsb-type='TextBox_jqm'  readonly style='text-align:center; text-shadow:none;' class=' ui-mini  '>",
+  "<input id='txtbirthday' type='date' name='' autocorrect='off' autocomplete='off' autocapitalize='off' step=any value='' placeholder='ادخل تاريخ ميلادك' data-nsb-type='TextBox_jqm'   style='text-align:center; text-shadow:none;' class=' ui-mini  '>",
+  "<input id='txtdays' type='text' name='' autocorrect='on' autocomplete='on' autocapitalize='on' step=any value='' placeholder='عمرك بالايام' data-nsb-type='TextBox_jqm'   style='text-align:center; text-shadow:none;' class=' ui-mini  '>",
+  "<input id='txtmonths' type='text' name='' autocorrect='on' autocomplete='on' autocapitalize='on' step=any value='' placeholder='عمرك بالشهور' data-nsb-type='TextBox_jqm'   style='text-align:center; text-shadow:none;' class=' ui-mini  '>",
+  "<input id='txtyears' type='text' name='' autocorrect='on' autocomplete='on' autocapitalize='on' step=any value='' placeholder='عمرك بالسنين' data-nsb-type='TextBox_jqm'   style='text-align:center; text-shadow:none;' class=' ui-mini  '>",
+  NSB.Checkbox_jqm("chkages", '168', "\u0627\u064A\u0627\u0645,\u000A\u0634\u0647\u0648\u0631,\u000A\u0633\u0646\u0648\u0627\u062A", style="", ' ', '', ' ', 'false', 'left'),
+  "<button id='btncalc' class='ui-btn ui-mini  ui-btn-inline ui-icon- ui-btn-icon-none  ' style='margin:0px; text-shadow:none; overflow:visible;  ' data-nsb-type=Button_jqm>\u0627\u062D\u0633\u0628</button>",
+  "<button id='btnclear' class='ui-btn ui-mini  ui-btn-inline ui-icon- ui-btn-icon-none  ' style='margin:0px; text-shadow:none; overflow:visible;  ' data-nsb-type=Button_jqm>\u0627\u0645\u0633\u062D</button>",
+  ].join('');
+</script>
+</div>
+</div>
+<script>
+if(!navigator.cookieEnabled) NSB.MsgBox('Please turn cookies on.');
+(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++)if(all[i].id!=''&&typeof all[i].id!='undefined'&&typeof window[all[i].id]=='undefined')window[all[i].id]=all[i];})()
+NSB.currentForm = Form1;
+NSB.stopOnError = true;
+NSB.enableBrowserArrows = false;
+NSB.enableAppScroll = false;
+NSB.newVersionWarning = false;
+NSB.id = 'Project1';
+if ($.mobile != undefined) $.mobile.hashListeningEnabled = false;
+
+// ***** Code for form: Form1 *****
+window.addEventListener('load', function() {
+  Form1.style.display = 'block';
+  NSB.addProperties(Form1);
+
+  NSB.addProperties(lbltitle);
+
+  NSB.addProperties(lbltoday);
+
+  NSB.addProperties(Label3);
+  txtd.parentElement.id = 'txtd_wrapper';
+  txtd_wrapper.setAttribute('data-nsb-type', 'TextBox_jqm');
+  txtd.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.addProperties(txtd, txtd_wrapper);
+  $('#txtd_wrapper').removeClass('ui-shadow-inset');
+  $('#txtd_wrapper').removeClass('ui-corner-all');
+  txtd.style.height = (txtd.clientHeight + 2) + 'px';
+  NSB.addDisableProperty(txtd);
+  txtbirthday.parentElement.id = 'txtbirthday_wrapper';
+  txtbirthday_wrapper.setAttribute('data-nsb-type', 'TextBox_jqm');
+  txtbirthday.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.addProperties(txtbirthday, txtbirthday_wrapper);
+  $('#txtbirthday_wrapper').removeClass('ui-shadow-inset');
+  $('#txtbirthday_wrapper').removeClass('ui-corner-all');
+  txtbirthday.style.height = (txtbirthday.clientHeight + 2) + 'px';
+  NSB.addDisableProperty(txtbirthday);
+  txtdays.parentElement.id = 'txtdays_wrapper';
+  txtdays_wrapper.setAttribute('data-nsb-type', 'TextBox_jqm');
+  txtdays.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.addProperties(txtdays, txtdays_wrapper);
+  $('#txtdays_wrapper').removeClass('ui-shadow-inset');
+  $('#txtdays_wrapper').removeClass('ui-corner-all');
+  txtdays.style.height = (txtdays.clientHeight + 2) + 'px';
+  NSB.addDisableProperty(txtdays);
+  txtmonths.parentElement.id = 'txtmonths_wrapper';
+  txtmonths_wrapper.setAttribute('data-nsb-type', 'TextBox_jqm');
+  txtmonths.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.addProperties(txtmonths, txtmonths_wrapper);
+  $('#txtmonths_wrapper').removeClass('ui-shadow-inset');
+  $('#txtmonths_wrapper').removeClass('ui-corner-all');
+  txtmonths.style.height = (txtmonths.clientHeight + 2) + 'px';
+  NSB.addDisableProperty(txtmonths);
+  txtyears.parentElement.id = 'txtyears_wrapper';
+  txtyears_wrapper.setAttribute('data-nsb-type', 'TextBox_jqm');
+  txtyears.addEventListener('touchmove', function(e) {e.stopPropagation();}, false);
+  NSB.addProperties(txtyears, txtyears_wrapper);
+  $('#txtyears_wrapper').removeClass('ui-shadow-inset');
+  $('#txtyears_wrapper').removeClass('ui-corner-all');
+  txtyears.style.height = (txtyears.clientHeight + 2) + 'px';
+  NSB.addDisableProperty(txtyears);
+  NSB.Checkbox_jqm_init('chkages','\u0627\u064A\u0627\u0645,\u000A\u0634\u0647\u0648\u0631,\u000A\u0633\u0646\u0648\u0627\u062A');
+  NSB.addProperties(chkages);
+  NSB.addDisableProperty(btncalc);
+  NSB.addProperties(btncalc);
+  NSB.addDisableProperty(btnclear);
+  NSB.addProperties(btnclear);
+  Form1.style.display = 'none';
+}, false);
+
+
+window.addEventListener('orientationchange', function(){window.scrollTo(0,0)});
+window.addEventListener('load', function() {
+  browserWarningMessage('Please use Google Chrome, Apple Safari or another supported browser.');
+  Form1.style.display = 'block';
+  if (NSB.enableBrowserArrows) location.hash = '#/Form1';
+  Main();
+  if (typeof(Form1.onshow)=='function') Form1.onshow();
+}, false);
+</script>
+<script src='code.js'></script>
+
+</body>
+</html>
